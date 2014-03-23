@@ -4,7 +4,7 @@
   "homepage": "https://github.com/juliancwirko/meteor-zf5",
   "author": "Julian Ćwirko",
   "version": "0.0.1",
-  "git": "https://github.com/juliancwirko/meteor-zf5",
+  "git": "https://github.com/juliancwirko/meteor-zf5.git",
   "packages": {
     "scss": {}
   }
