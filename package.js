@@ -3,7 +3,10 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-	api.use('scss', 'client');
+	api.use([
+		'jquery',
+		'scss',
+	], 'client');
 
 	api.add_files([
 	'js/vendor/modernizr.js',
