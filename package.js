@@ -1,5 +1,5 @@
 Package.describe({
-	summary: "meteor-zf5"
+	summary: "Foundation 5 for Meteor"
 });
 
 Package.on_use(function (api) {

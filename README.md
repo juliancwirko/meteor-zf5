@@ -8,10 +8,10 @@ Foundation 5 for Meteor
 in your main scss file
 
 ```
-@import "packages/meteor-zf5/scss/normalize";
-// settings override here (listed in meteor-zf5/scss/foundation/_settings.scss file [copy uncomented here]):
+@import "packages/zf5/scss/normalize";
+// settings override here (listed in zf5/scss/foundation/_settings.scss file [copy uncomented here]):
 
-@import "packages/meteor-zf5/scss/foundation";
+@import "packages/zf5/scss/foundation";
 
 // your styles here
 ```
