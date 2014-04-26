@@ -1,11 +1,11 @@
 meteor-zf5
 ==========
 
-Foundation 5 for Meteor
+Foundation 5 with Sass for Meteor
 
 ### Usage
 
-in your main scss file (example it it is in client/stylesheet folder)
+In your main scss file (example if it is in client/stylesheet folder)
 
 ```
 @import "../../packages/zf5/scss/normalize";
@@ -23,3 +23,7 @@ Template.[your main layout name].rendered = function () {
 	$(document).foundation();
 }
 ```
+
+### Change log
+
+v0.0.2 - Foundation 5.2.2
