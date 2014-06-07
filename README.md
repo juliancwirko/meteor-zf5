@@ -3,6 +3,9 @@ meteor-zf5
 
 Foundation 5 with Sass for Meteor
 
+### Demo
+[http://zf5.meteor.com](http://zf5.meteor.com)
+
 ### Usage
 
 In your main scss file (example if it is in client/stylesheet folder)
