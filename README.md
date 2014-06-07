@@ -9,21 +9,21 @@ In your main scss file (example if it is in client/stylesheet folder)
 
 ```
 @import "../../packages/zf5/scss/normalize";
-// settings override here (listed in zf5/scss/foundation/_settings.scss file [copy uncomented here]):
+// settings override here (zf5/scss/foundation/_settings.scss file [copy lines here]):
 
 @import "../../packages/zf5/scss/foundation";
+// or you can import ony couple components like that
+// @import "../../packages/zf5/scss/foundation/components/grid";
+// @import "../../packages/zf5/scss/foundation/components/accordion";
+// @import "../../packages/zf5/scss/foundation/components/alert-boxes";
+// and so one
 
-// your styles here
+// your main styles here:
 ```
 
-in your main view js file
-
-```
-Template.[your main layout name].rendered = function () {
-	$(document).foundation();
-}
-```
+Sometimes you should use **$(document).foundation('reflow')** especially if there is any new foundation element rendered
 
 ### Change log
 
+v0.0.3 - Foundation 5.2.3
 v0.0.2 - Foundation 5.2.2
