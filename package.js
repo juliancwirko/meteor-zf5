@@ -9,7 +9,7 @@ Package.on_use(function (api) {
 	], 'client');
 
 	api.add_files([
-        'init.js',
+        'js/init.js',
         'js/vendor/modernizr.js',
         'js/foundation.js'
 	], 'client');
