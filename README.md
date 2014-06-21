@@ -28,5 +28,8 @@ Sometimes you should use **$(document).foundation('reflow')** especially if ther
 
 ### Change log
 
+v0.0.5 - Foundation 5.3.0
+
 v0.0.3 - Foundation 5.2.3
+
 v0.0.2 - Foundation 5.2.2
