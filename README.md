@@ -24,9 +24,11 @@ In your main scss file (example if it is in client/stylesheet folder)
 // your main styles here:
 ```
 
-Sometimes you should use **$(document).foundation('reflow')** especially if there is any new foundation element rendered
+Sometimes you should use **$(document).foundation('reflow')** especially if there is any new javascript foundation element added
 
 ### Change log
+
+v0.0.6 - Foundation 5.3.1
 
 v0.0.5 - Foundation 5.3.0
 
