@@ -3,6 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+    api.imply('scss');
 	api.use([
 		'jquery',
 		'scss',
