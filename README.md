@@ -8,6 +8,8 @@ Foundation 5 with Sass for Meteor
 
 ### Usage
 
+#### SCSS part
+
 In your main scss file (example if it is in client/stylesheet folder)
 
 ```
@@ -24,9 +26,53 @@ In your main scss file (example if it is in client/stylesheet folder)
 // your main styles here:
 ```
 
-Sometimes you should use **$(document).foundation('reflow')** especially if there is any new javascript foundation element added
+
+#### JavaScript part
+
+There is no simple way to init foundation js once :/ but you have a couple of options, you can:
+
+- Run Foundation reflow each time you will be loading templates with Foundation js plugins:
+````
+Template.subtemplateOflayout.rendered = function () {
+    $(document).foundation('reflow');
+}
+````
+You can call foundation reflow on templates which use Foundation js plugins like reveal, top bars etc.
+
+- Run Foundation init when subtemplates are rendered but only for specific plugins like:
+````
+Template.subtemplateOflayout.rendered = function () {
+    $(document).foundation({
+        reveal : {
+            animation_speed: 500
+        },
+        tooltip : {
+            disable_for_touch: true
+        },
+        topbar : {
+            custom_back_text: false,
+            is_hover: false,
+            mobile_show_parent_link: true
+        }
+    });
+}
+````
+You will find more info at: [Foundation JavaScript Docs](http://foundation.zurb.com/docs/javascript.html)
+
+- If you are using Iron Router you can use 
+````
+Router.onAfterAction(function () {
+    $(document).foundation(); // or single plugin
+});
+````
+More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/devel/DOCS.md#using-hooks)
+
+**The basic logic is to run initialization or init with reflow on element actually presented in the DOM. With Meteor this isn't so simple. It needs some time to use to it.**
+
 
 ### Change log
+
+v0.0.8 - Foundation 5.3.2, 5.3.3
 
 v0.0.6 - Foundation 5.3.1
 
