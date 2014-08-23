@@ -14,7 +14,8 @@ In your main scss file (example if it is in client/stylesheet folder)
 
 ```
 @import "../../packages/zf5/scss/normalize";
-// settings override here (zf5/scss/foundation/_settings.scss file [copy lines here]):
+// settings override here (zf5/scss/foundation/_settings.scss file [copy lines here])
+// you can also copy all _settings.scss file into your stylesheet folder and import it here by "@import settings;" - remember to replace foundation/functions path in _settings.scss
 
 @import "../../packages/zf5/scss/foundation";
 // or you can import ony couple components like that
@@ -71,6 +72,8 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 
 ### Change log
+
+v0.0.9 - Foundation 5.4.0
 
 v0.0.8 - Foundation 5.3.2, 5.3.3
 
