@@ -1,6 +1,10 @@
 meteor-zf5
 ==========
 
+There are some problems with new packaging system (Meteor 0.9.*) and Scss custom imports. 
+Without such possibility this package is useless and you simply can git clone it into your application and import partials from there.
+But I will try to figure out how we can achieve it now. If someone have any ideas please write to me.
+
 Foundation 5 with Sass for Meteor
 
 ### Demo
