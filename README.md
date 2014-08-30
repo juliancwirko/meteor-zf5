@@ -1,7 +1,8 @@
 meteor-zf5
 ==========
 
-Foundation 5 with Sass for Meteor 0.9.* (..tests needed)
+#### Foundation 5 with Sass for Meteor 0.9.* (..tests needed)
+##### version 0.0.9 will be the last tagged version and should work with Meteor 0.8.3
 
 ### Demo
 [http://zf5.meteor.com](http://zf5.meteor.com)
