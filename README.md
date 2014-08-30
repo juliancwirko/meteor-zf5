@@ -1,38 +1,76 @@
 meteor-zf5
 ==========
 
-There are some problems with new packaging system (Meteor 0.9.*) and Scss custom imports. 
-Without such possibility this package is useless and you simply can git clone it into your application and import partials from there.
-But I will try to figure out how we can achieve it now. If someone have any ideas please write to me.
-
-Foundation 5 with Sass for Meteor
+Foundation 5 with Sass for Meteor 0.9.* (..tests needed)
 
 ### Demo
 [http://zf5.meteor.com](http://zf5.meteor.com)
 
 ### Usage
 
-#### SCSS part
+There are some problems with new packaging system (Meteor 0.9.*) and Scss custom imports...
 
-In your main scss file (example if it is in client/stylesheet folder)
+#### SCSS part 
+(because of the changes in Meteor 0.9.* packaging system importing components is ugly - we must import custom components from Meteor build folders. 
+I will try to figure it out how to do this better. 
+But for now it works, I don't know if it works for everyone :/ need tests).
+
+**In your main scss file (for example if it is in client/stylesheet folder) copy and paste this:** (you can choose components you want - grid.scss is mandatory)
 
 ```
-@import "../../packages/zf5/scss/normalize";
-// settings override here (zf5/scss/foundation/_settings.scss file [copy lines here])
-// you can also copy all _settings.scss file into your stylesheet folder and import it here by "@import settings;" - remember to replace foundation/functions path in _settings.scss
+@charset "UTF-8";
 
-@import "../../packages/zf5/scss/foundation";
-// or you can import ony couple components like that
-// @import "../../packages/zf5/scss/foundation/components/grid";
-// @import "../../packages/zf5/scss/foundation/components/accordion";
-// @import "../../packages/zf5/scss/foundation/components/alert-boxes";
-// and so one
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/normalize.scss";
 
-// your main styles here:
+//this is your local Foundation settings file copy it from git repo -> scss/foundation/_settings.scss into your client/stylesheet
+// @import "settings" 
+
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/grid.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/accordion.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/alert-boxes.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/block-grid.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/breadcrumbs.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/button-groups.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/buttons.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/clearing.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/dropdown.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/dropdown-buttons.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/flex-video.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/forms.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/icon-bar.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/inline-lists.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/joyride.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/keystrokes.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/labels.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/magellan.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/orbit.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/pagination.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/panels.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/pricing-tables.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/progress-bars.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/range-slider.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/reveal.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/side-nav.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/split-buttons.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/sub-nav.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/switches.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/tables.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/tabs.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/thumbs.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/tooltips.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/top-bar.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/type.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/offcanvas.scss";
+@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko:zf5/scss/foundation/components/visibility.scss";
+
+// your main styles goes here:
+
 ```
 
+**remember that you can choose components you want**
 
 #### JavaScript part
+(Stays the same - like before 0.9.*)
 
 There is no simple way to init foundation js once :/ but you have a couple of options, you can:
 
@@ -76,6 +114,10 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 
 ### Change log
+
+v0.0.12 - Foundation 5.4.3
+
+v0.0.10, v0.0.11 - attempts to integrate with Meteor 0.9.0
 
 v0.0.9 - Foundation 5.4.0
 
