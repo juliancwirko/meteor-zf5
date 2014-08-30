@@ -20,7 +20,7 @@ Package.on_use(function (api) {
     api.add_files([
 
         'scss/normalize.scss',
-        'scss/foundation.scss'
+        'scss/foundation.scss',
 
         'scss/foundation/_functions.scss',
         'scss/foundation/_settings.scss',
