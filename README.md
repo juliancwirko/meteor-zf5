@@ -9,6 +9,8 @@ meteor-zf5
 
 ### Usage
 
+````meteor add juliancwirko:zf5````
+
 There are some problems with new packaging system (Meteor 0.9.*) and Scss custom imports...
 
 #### SCSS part 
