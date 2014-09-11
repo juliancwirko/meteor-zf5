@@ -20,6 +20,8 @@ But for now it works, I don't know if it works for everyone :/ need tests).
 
 **In your main scss file (for example if it is in client/stylesheet folder) copy and paste this:** (you can choose components you want - grid.scss is mandatory)
 
+Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part](https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part)
+
 ```
 @charset "UTF-8";
 
