@@ -122,6 +122,8 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 ### Change log
 
+v0.0.13 - Foundation 5.4.4 (functions.scss modified - should work with libsass [Sass 3.4 Compatibility](https://github.com/zurb/foundation/issues/5756))
+
 v0.0.12 - Foundation 5.4.3
 
 v0.0.10, v0.0.11 - attempts to integrate with Meteor 0.9.0
