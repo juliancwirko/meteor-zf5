@@ -1,8 +1,7 @@
 meteor-zf5
 ==========
 
-#### Foundation 5 with Sass for Meteor 0.9.* (..tests needed)
-##### version 0.0.9 will be the last tagged version and should work with Meteor 0.8.3
+#### Foundation 5 with Sass for Meteor 0.9.*
 
 ### Demo
 [http://zf5.meteor.com](http://zf5.meteor.com)
@@ -13,10 +12,10 @@ meteor-zf5
 
 There are some problems with new packaging system (Meteor 0.9.*) and Scss custom imports...
 
-#### SCSS part 
-(because of the changes in Meteor 0.9.* packaging system importing components is ugly - we must import custom components from Meteor build folders. 
-I will try to figure it out how to do this better. 
-But for now it works, I don't know if it works for everyone :/ need tests).
+#### SCSS part
+(because of the changes in Meteor 0.9.* packaging system importing components is ugly - we must import custom components from Meteor build folders.
+I will try to figure it out how to do this better.
+But for now it works.
 
 **In your main scss file (for example if it is in client/stylesheet folder) copy and paste this:** (you can choose components you want - grid.scss is mandatory)
 
@@ -30,7 +29,7 @@ Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancw
 @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/normalize.scss";
 
 //this is your local Foundation settings file copy it from git repo -> scss/foundation/_settings.scss into your client/stylesheet
-// @import "settings" 
+// @import "settings"
 
 @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/grid.scss";
 @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/accordion.scss";
@@ -109,7 +108,7 @@ Template.subtemplateOflayout.rendered = function () {
 ````
 You will find more info at: [Foundation JavaScript Docs](http://foundation.zurb.com/docs/javascript.html)
 
-- If you are using Iron Router you can use 
+- If you are using Iron Router you can use
 ````
 Router.onAfterAction(function () {
     $(document).foundation(); // or single plugin
@@ -122,7 +121,9 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 ### Change log
 
-v0.0.13 - Foundation 5.4.4 (functions.scss modified - should work with libsass [Sass 3.4 Compatibility](https://github.com/zurb/foundation/issues/5756))
+v0.0.14 - Foundation 5.4.5
+
+v0.0.13 - Foundation 5.4.4
 
 v0.0.12 - Foundation 5.4.3
 

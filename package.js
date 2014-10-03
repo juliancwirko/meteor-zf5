@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Foundation 5 with Sass for Meteor",
-  version: "0.0.13",
+  version: "0.0.14",
   name: "juliancwirko:zf5",
   git: "https://github.com/juliancwirko/meteor-zf5.git",
 });
