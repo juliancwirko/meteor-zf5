@@ -6,10 +6,10 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.imply('fourseven:scss@0.9.5');
+    api.imply('fourseven:scss@0.9.6');
 	api.use([
 		'jquery@1.0.0',
-		'fourseven:scss@0.9.5',
+		'fourseven:scss@0.9.6',
 	], 'client');
 
 	api.add_files([
