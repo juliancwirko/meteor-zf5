@@ -121,6 +121,8 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 ### Change log
 
+v0.0.15 - Foundation5 versions bump
+
 v0.0.14 - Foundation 5.4.5
 
 v0.0.13 - Foundation 5.4.4
