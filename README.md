@@ -121,6 +121,8 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 ### Change log
 
+v0.1.1 - Back to old version of the Scss package (we need to wait for Foundation 5 updates)
+
 v0.1.0 - Scss package version bump
 
 v0.0.16 - Foundation 5.4.6
