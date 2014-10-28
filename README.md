@@ -1,7 +1,7 @@
 meteor-zf5
 ==========
 
-#### Foundation 5 with Sass for Meteor 0.9.*
+#### Foundation 5 with Scss for Meteor 1.0
 
 ### Demo
 [http://zf5.meteor.com](http://zf5.meteor.com)
@@ -10,18 +10,13 @@ meteor-zf5
 
 ````meteor add juliancwirko:zf5````
 
-There are some problems with new packaging system (Meteor 0.9.*) and Scss custom imports...
-
 #### SCSS part
-(because of the changes in Meteor 0.9.* packaging system importing components is ugly - we must import custom components from Meteor build folders.
-I will try to figure it out how to do this better.
-But for now it works.
 
 **In your main scss file (for example if it is in client/stylesheet folder) copy and paste this:** (you can choose components you want - grid.scss is mandatory)
 
 Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part](https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part)
 
-**from version 0.9.2 proper dir name for scss files is 'juliancwirko_zf5' no 'juliancwirko:zf5'**
+I will try to figure it out how to do this better (without this long ugly paths).
 
 ```
 @charset "UTF-8";
@@ -76,7 +71,6 @@ Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancw
 **remember that you can choose components you want**
 
 #### JavaScript part
-(Stays the same - like before 0.9.*)
 
 There is no simple way to init foundation js once :/ but you have a couple of options, you can:
 
@@ -120,6 +114,8 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 
 ### Change log
+
+v0.1.2 - Foundation 5.4.7
 
 v0.1.1 - Back to old version of the Scss package (we need to wait for Foundation 5 updates)
 
