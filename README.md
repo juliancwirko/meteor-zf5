@@ -115,32 +115,19 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 ### Change log
 
+v0.1.3 - Foundation 5.5.0
 v0.1.2 - Foundation 5.4.7
-
 v0.1.1 - Back to old version of the Scss package (we need to wait for Foundation 5 updates)
-
 v0.1.0 - Scss package version bump
-
 v0.0.16 - Foundation 5.4.6
-
 v0.0.15 - Foundation5 versions bump
-
 v0.0.14 - Foundation 5.4.5
-
 v0.0.13 - Foundation 5.4.4
-
 v0.0.12 - Foundation 5.4.3
-
 v0.0.10, v0.0.11 - attempts to integrate with Meteor 0.9.0
-
 v0.0.9 - Foundation 5.4.0
-
 v0.0.8 - Foundation 5.3.2, 5.3.3
-
 v0.0.6 - Foundation 5.3.1
-
 v0.0.5 - Foundation 5.3.0
-
 v0.0.3 - Foundation 5.2.3
-
 v0.0.2 - Foundation 5.2.2
