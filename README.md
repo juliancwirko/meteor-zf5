@@ -1,7 +1,7 @@
 meteor-zf5
 ==========
 
-#### Foundation 5.5.0 with Scss for Meteor 1.0.*
+#### Foundation for Sites 5.5.0 with Scss for Meteor 1.0.*
 
 ### Demo
 [http://zf5.meteor.com](http://zf5.meteor.com)
