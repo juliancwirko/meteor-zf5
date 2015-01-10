@@ -70,6 +70,11 @@ I will try to figure it out how to do this better (without this long ugly paths)
 
 **remember that you can choose components you want**
 
+### Important note
+
+Quoting guys from [Meteoric](https://atmospherejs.com/meteoric/ionicons-sass) (this is the same scss case here)
+"Due to a current limitation of the Meteor packaging system, the above paths may not exist the first time you run your Meteor app after installing this package. This will cause an error saying the file to import was not found. This may also occur if you run ```meteor reset```. Restarting your app should fix this problem. See [meteor/meteor#2606](https://github.com/meteor/meteor/issues/2606) and [meteor/meteor#2796](https://github.com/meteor/meteor/issues/2796) for more info."
+
 #### JavaScript part
 
 There is no simple way to init foundation js once :/ but you have a couple of options, you can:
