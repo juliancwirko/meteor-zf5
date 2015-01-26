@@ -18,55 +18,53 @@ Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancw
 
 I will try to figure it out how to do this better (without this long ugly paths).
 
-````
-@charset "UTF-8";
 
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/normalize.scss";
+    @charset "UTF-8";
 
-//this is your local Foundation settings file copy it from git repo -> scss/foundation/_settings.scss into your client/stylesheet
-// @import "settings"
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/normalize.scss";
 
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/grid.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/accordion.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/alert-boxes.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/block-grid.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/breadcrumbs.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/button-groups.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/buttons.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/clearing.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/dropdown.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/dropdown-buttons.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/flex-video.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/forms.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/icon-bar.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/inline-lists.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/joyride.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/keystrokes.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/labels.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/magellan.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/orbit.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/pagination.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/panels.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/pricing-tables.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/progress-bars.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/range-slider.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/reveal.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/side-nav.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/split-buttons.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/sub-nav.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/switches.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/tables.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/tabs.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/thumbs.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/tooltips.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/top-bar.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/type.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/offcanvas.scss";
-@import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/visibility.scss";
+    //this is your local Foundation settings file copy it from git repo -> scss/foundation/_settings.scss into your client/stylesheet
+    // @import "settings"
 
-// your main styles goes here:
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/grid.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/accordion.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/alert-boxes.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/block-grid.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/breadcrumbs.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/button-groups.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/buttons.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/clearing.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/dropdown.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/dropdown-buttons.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/flex-video.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/forms.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/icon-bar.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/inline-lists.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/joyride.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/keystrokes.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/labels.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/magellan.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/orbit.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/pagination.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/panels.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/pricing-tables.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/progress-bars.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/range-slider.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/reveal.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/side-nav.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/split-buttons.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/sub-nav.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/switches.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/tables.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/tabs.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/thumbs.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/tooltips.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/top-bar.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/type.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/offcanvas.scss";
+    @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/foundation/components/visibility.scss";
 
-````
+    // your main styles goes here:
 
 **remember that you can choose components you want**
 
@@ -79,45 +77,41 @@ Quoting guys from [Meteoric](https://atmospherejs.com/meteoric/ionicons-sass) (t
 
 There is no simple way to init foundation js once :/ but you have a couple of options, you can:
 
-- Run Foundation reflow each time you will be loading templates with Foundation js plugins:
+Run Foundation reflow each time you will be loading templates with Foundation js plugins:
 
-````
-Template.subtemplateOflayout.rendered = function () {
-    $(document).foundation('reflow');
-}
-````
+    Template.subtemplateOflayout.rendered = function () {
+        $(document).foundation('reflow');
+    }
 
 You can call foundation reflow on templates which use Foundation js plugins like reveal, top bars etc.
 
-- Run Foundation init when subtemplates are rendered but only for specific plugins like:
+Run Foundation init when subtemplates are rendered but only for specific plugins like:
 
-````
-Template.subtemplateOflayout.rendered = function () {
-    $(document).foundation({
-        reveal : {
-            animation_speed: 500
-        },
-        tooltip : {
-            disable_for_touch: true
-        },
-        topbar : {
-            custom_back_text: false,
-            is_hover: false,
-            mobile_show_parent_link: true
-        }
-    });
-}
-````
+    Template.subtemplateOflayout.rendered = function () {
+        $(document).foundation({
+            reveal : {
+                animation_speed: 500
+            },
+            tooltip : {
+                disable_for_touch: true
+            },
+            topbar : {
+                custom_back_text: false,
+                is_hover: false,
+                mobile_show_parent_link: true
+            }
+        });
+    }
+
 
 You will find more info at: [Foundation JavaScript Docs](http://foundation.zurb.com/docs/javascript.html)
 
-- If you are using Iron Router you can use
+If you are using Iron Router you can use
 
-````
-Router.onAfterAction(function () {
-    $(document).foundation(); // or single plugin
-});
-````
+    Router.onAfterAction(function () {
+        $(document).foundation(); // or single plugin
+    });
+
 
 More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/devel/DOCS.md#using-hooks)
 
