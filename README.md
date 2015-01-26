@@ -18,7 +18,7 @@ Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancw
 
 I will try to figure it out how to do this better (without this long ugly paths).
 
-```
+````
 @charset "UTF-8";
 
 @import "../../.meteor/local/build/programs/web.browser/packages/juliancwirko_zf5/scss/normalize.scss";
@@ -66,7 +66,7 @@ I will try to figure it out how to do this better (without this long ugly paths)
 
 // your main styles goes here:
 
-```
+````
 
 **remember that you can choose components you want**
 
@@ -80,14 +80,17 @@ Quoting guys from [Meteoric](https://atmospherejs.com/meteoric/ionicons-sass) (t
 There is no simple way to init foundation js once :/ but you have a couple of options, you can:
 
 - Run Foundation reflow each time you will be loading templates with Foundation js plugins:
+
 ````
 Template.subtemplateOflayout.rendered = function () {
     $(document).foundation('reflow');
 }
 ````
+
 You can call foundation reflow on templates which use Foundation js plugins like reveal, top bars etc.
 
 - Run Foundation init when subtemplates are rendered but only for specific plugins like:
+
 ````
 Template.subtemplateOflayout.rendered = function () {
     $(document).foundation({
@@ -105,14 +108,17 @@ Template.subtemplateOflayout.rendered = function () {
     });
 }
 ````
+
 You will find more info at: [Foundation JavaScript Docs](http://foundation.zurb.com/docs/javascript.html)
 
 - If you are using Iron Router you can use
+
 ````
 Router.onAfterAction(function () {
     $(document).foundation(); // or single plugin
 });
 ````
+
 More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/devel/DOCS.md#using-hooks)
 
 **The basic logic is to run initialization or init with reflow on element actually presented in the DOM. With Meteor this isn't so simple. It needs some time to use to it.**
@@ -120,19 +126,19 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 ### Change log
 
-v0.1.3 - Foundation 5.5.0
-v0.1.2 - Foundation 5.4.7
-v0.1.1 - Back to old version of the Scss package (we need to wait for Foundation 5 updates)
-v0.1.0 - Scss package version bump
-v0.0.16 - Foundation 5.4.6
-v0.0.15 - Foundation5 versions bump
-v0.0.14 - Foundation 5.4.5
-v0.0.13 - Foundation 5.4.4
-v0.0.12 - Foundation 5.4.3
-v0.0.10, v0.0.11 - attempts to integrate with Meteor 0.9.0
-v0.0.9 - Foundation 5.4.0
-v0.0.8 - Foundation 5.3.2, 5.3.3
-v0.0.6 - Foundation 5.3.1
-v0.0.5 - Foundation 5.3.0
-v0.0.3 - Foundation 5.2.3
-v0.0.2 - Foundation 5.2.2
+- v0.1.3 - Foundation 5.5.0
+- v0.1.2 - Foundation 5.4.7
+- v0.1.1 - Back to old version of the Scss package (we need to wait for Foundation 5 updates)
+- v0.1.0 - Scss package version bump
+- v0.0.16 - Foundation 5.4.6
+- v0.0.15 - Foundation5 versions bump
+- v0.0.14 - Foundation 5.4.5
+- v0.0.13 - Foundation 5.4.4
+- v0.0.12 - Foundation 5.4.3
+- v0.0.10, v0.0.11 - attempts to integrate with Meteor 0.9.0
+- v0.0.9 - Foundation 5.4.0
+- v0.0.8 - Foundation 5.3.2, 5.3.3
+- v0.0.6 - Foundation 5.3.1
+- v0.0.5 - Foundation 5.3.0
+- v0.0.3 - Foundation 5.2.3
+- v0.0.2 - Foundation 5.2.2
