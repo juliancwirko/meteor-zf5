@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Foundation 5 with Scss for Meteor",
-  version: "0.1.3",
+  version: "1.0.0",
   name: "juliancwirko:zf5",
   git: "https://github.com/juliancwirko/meteor-zf5.git",
 });
@@ -69,5 +69,5 @@ Package.onUse(function (api) {
         'scss/foundation/components/_alert-boxes.scss',
         'scss/foundation/components/_accordion.scss'
 
-    ], 'client', {isAsset: true});
+    ], 'server');
 });
