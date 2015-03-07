@@ -173,7 +173,7 @@ If you are using Iron Router you can use
     });
 
 
-More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/devel/DOCS.md#using-hooks)
+More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/devel/Guide.md#hooks)
 
 **The basic logic is to run initialization or init with reflow on element actually presented in the DOM. With Meteor this isn't so simple. It needs some time to use to it.**
 
