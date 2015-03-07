@@ -17,14 +17,70 @@ meteor-zf5
 
 ````meteor add juliancwirko:zf5````
 
-#### SCSS part
+#### Recommended way to use it
+
+You can use special ````scss.json```` file (thanks to fourseven:scss package) to configure your main path. Just add ````scss.json```` file in your root folder.
+
+    {
+        "includePaths": [
+            ".meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/"
+        ]
+    }
+
+Then you will be able to import all (or chosen) Foundation partials in your main .scss file:
+
+    @charset "UTF-8";
+
+    @import "normalize.scss";
+
+    //local Foundation settings file. Copy it from git repo -> scss/foundation/_settings.scss near main .scss file. Then Uncomment the line below.
+    // @import "settings"
+
+    @import "foundation/components/grid.scss";
+    @import "foundation/components/accordion.scss";
+    @import "foundation/components/alert-boxes.scss";
+    @import "foundation/components/block-grid.scss";
+    @import "foundation/components/breadcrumbs.scss";
+    @import "foundation/components/button-groups.scss";
+    @import "foundation/components/buttons.scss";
+    @import "foundation/components/clearing.scss";
+    @import "foundation/components/dropdown.scss";
+    @import "foundation/components/dropdown-buttons.scss";
+    @import "foundation/components/flex-video.scss";
+    @import "foundation/components/forms.scss";
+    @import "foundation/components/icon-bar.scss";
+    @import "foundation/components/inline-lists.scss";
+    @import "foundation/components/joyride.scss";
+    @import "foundation/components/keystrokes.scss";
+    @import "foundation/components/labels.scss";
+    @import "foundation/components/magellan.scss";
+    @import "foundation/components/orbit.scss";
+    @import "foundation/components/pagination.scss";
+    @import "foundation/components/panels.scss";
+    @import "foundation/components/pricing-tables.scss";
+    @import "foundation/components/progress-bars.scss";
+    @import "foundation/components/range-slider.scss";
+    @import "foundation/components/reveal.scss";
+    @import "foundation/components/side-nav.scss";
+    @import "foundation/components/split-buttons.scss";
+    @import "foundation/components/sub-nav.scss";
+    @import "foundation/components/switches.scss";
+    @import "foundation/components/tables.scss";
+    @import "foundation/components/tabs.scss";
+    @import "foundation/components/thumbs.scss";
+    @import "foundation/components/tooltips.scss";
+    @import "foundation/components/top-bar.scss";
+    @import "foundation/components/type.scss";
+    @import "foundation/components/offcanvas.scss";
+    @import "foundation/components/visibility.scss";
+
+#### Other usage option is without using ````scss.json```` file.
+
+Then you should include these long paths in your main .scss project file.
 
 **In your main scss file (for example if it is in client/stylesheet folder) copy and paste this:** (you can choose components you want - grid.scss is mandatory)
 
 Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part](https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part)
-
-I will try to figure it out how to do this better (without this long ugly paths).
-
 
     @charset "UTF-8";
 
@@ -122,6 +178,7 @@ More: [Iron Router Hooks Docs](https://github.com/EventedMind/iron-router/blob/d
 
 ### Change log
 
+- v1.0.1 - fourseven:scss update, scss.json usage readme update
 - v1.0.0 - Foundation 5.5.1, Scss assets moved to the server (paths changed)
 - v0.1.3 - Foundation 5.5.0
 - v0.1.2 - Foundation 5.4.7
