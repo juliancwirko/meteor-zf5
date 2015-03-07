@@ -19,13 +19,15 @@ meteor-zf5
 
 ### Recommended way to use it
 
-You can use special ````scss.json```` file (thanks to [fourseven:scss](https://github.com/fourseven/meteor-scss) package) to configure your main path. Just add ````scss.json```` file in your root folder.
+You can use special ````scss.json```` file (thanks to [fourseven:scss](https://github.com/fourseven/meteor-scss) package) to configure your main path. Just add ````scss.json```` file in your root folder (and restart your app).
 
     {
         "includePaths": [
             ".meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/"
         ]
     }
+
+You can also turn on Autoprefixer here etc. Docs: [fourseven:scss](https://github.com/fourseven/meteor-scss)
 
 Then you will be able to import all (or chosen) Foundation partials in your main .scss file:
 
