@@ -17,9 +17,9 @@ meteor-zf5
 
 ````meteor add juliancwirko:zf5````
 
-#### Recommended way to use it
+### Recommended way to use it
 
-You can use special ````scss.json```` file (thanks to fourseven:scss package) to configure your main path. Just add ````scss.json```` file in your root folder.
+You can use special ````scss.json```` file (thanks to [fourseven:scss](https://github.com/fourseven/meteor-scss) package) to configure your main path. Just add ````scss.json```` file in your root folder.
 
     {
         "includePaths": [
@@ -74,11 +74,13 @@ Then you will be able to import all (or chosen) Foundation partials in your main
     @import "foundation/components/offcanvas.scss";
     @import "foundation/components/visibility.scss";
 
-#### Other usage option is without using ````scss.json```` file.
+    // your project styles goes here
+
+### Other usage option is without using ````scss.json```` file.
 
 Then you should include these long paths in your main .scss project file.
 
-**In your main scss file (for example if it is in client/stylesheet folder) copy and paste this:** (you can choose components you want - grid.scss is mandatory)
+**In your main scss file (for example if it is in client/stylesheet folder) copy and paste code below:** (you can choose components you want - grid.scss is mandatory)
 
 Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part](https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part)
 
@@ -131,7 +133,7 @@ Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancw
 
 **remember that you can choose components you want**
 
-#### JavaScript part
+### JavaScript part
 
 There is no simple way to init foundation js once :/ but you have a couple of options, you can:
 
