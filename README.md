@@ -1,7 +1,7 @@
 meteor-zf5
 ==========
 
-#### Foundation for Sites 5.5.1 with Scss for Meteor 1.0.*
+#### Foundation for Sites 5.5.2 with Scss for Meteor
 
 ### Demo
 [http://zf5.meteor.com](http://zf5.meteor.com)
@@ -182,6 +182,7 @@ More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/d
 
 ### Change log
 
+- v1.0.2 Foundation 5.5.2 adjustments
 - v1.0.1 - fourseven:scss update, scss.json usage readme update
 - v1.0.0 - Foundation 5.5.1, Scss assets moved to the server (paths changed)
 - v0.1.3 - Foundation 5.5.0

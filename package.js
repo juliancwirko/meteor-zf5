@@ -1,15 +1,15 @@
 Package.describe({
   summary: "Foundation 5 with Scss for Meteor",
-  version: "1.0.1",
+  version: "1.0.2",
   name: "juliancwirko:zf5",
   git: "https://github.com/juliancwirko/meteor-zf5.git",
 });
 
 Package.onUse(function (api) {
-    api.imply('fourseven:scss@2.0.1_2');
+    api.imply('fourseven:scss@2.1.1'); //2.0.1_2
 	api.use([
 		'jquery@1.0.0',
-		'fourseven:scss@2.0.1_2',
+		'fourseven:scss@2.1.1',
 	], 'client');
 
 	api.addFiles([
