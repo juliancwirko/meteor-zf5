@@ -182,6 +182,7 @@ More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/d
 
 ### Change log
 
+- v1.0.3 fourseven:scss update (v3.0.0)
 - v1.0.2 Foundation 5.5.2 adjustments
 - v1.0.1 - fourseven:scss update, scss.json usage readme update
 - v1.0.0 - Foundation 5.5.1, Scss assets moved to the server (paths changed)
