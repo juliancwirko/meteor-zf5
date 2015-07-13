@@ -1,15 +1,15 @@
 Package.describe({
   summary: "Foundation for Sites 5 with Scss",
-  version: "1.0.3",
+  version: "1.0.4",
   name: "juliancwirko:zf5",
   git: "https://github.com/juliancwirko/meteor-zf5.git",
 });
 
 Package.onUse(function (api) {
-    api.imply('fourseven:scss@3.0.0');
+    api.imply('fourseven:scss@3.2.0');
 	api.use([
 		'jquery@1.0.0',
-		'fourseven:scss@3.0.0',
+		'fourseven:scss@3.2.0',
 	], 'client');
 
 	api.addFiles([
