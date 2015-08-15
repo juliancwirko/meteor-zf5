@@ -179,6 +179,12 @@ More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/d
 
 **The basic logic is to run initialization or init with reflow on element actually presented in the DOM. With Meteor this isn't so simple. It needs some time to use to it.**
 
+### Also take a look at
+
+- [sGrid - Stylus Flexbox Grid System](http://s-grid.meteor.com)
+- [jeet - Stylus Grid System](https://atmospherejs.com/juliancwirko/s-jeet)
+- [Scotty - Meteor Boilerplate with Stylus, Flow Router, sGrid and many more](https://github.com/juliancwirko/scotty)
+- [and other my repos](https://github.com/juliancwirko)
 
 ### Change log
 
