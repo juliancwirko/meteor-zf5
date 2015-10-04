@@ -1,15 +1,15 @@
 Package.describe({
   summary: "Foundation for Sites 5 with Scss",
-  version: "1.0.4",
+  version: "2.0.0",
   name: "juliancwirko:zf5",
   git: "https://github.com/juliancwirko/meteor-zf5.git",
 });
 
 Package.onUse(function (api) {
-    api.imply('fourseven:scss@3.2.0');
+    api.imply('fourseven:scss@3.4.0-beta1');
 	api.use([
-		'jquery@1.0.0',
-		'fourseven:scss@3.2.0',
+		'jquery@1.11.4',
+		'fourseven:scss@3.4.0-beta1',
 	], 'client');
 
 	api.addFiles([
@@ -19,12 +19,13 @@ Package.onUse(function (api) {
 
     api.addFiles([
 
-        'scss/normalize.scss',
-        'scss/foundation.scss',
+        'scss/_normalize.scss',
+        'scss/_foundation.scss',
 
         'scss/foundation/_functions.scss',
         'scss/foundation/_settings.scss',
 
+        'scss/foundation/components/_global.scss',
         'scss/foundation/components/_xy-center.scss',
         'scss/foundation/components/_visibility.scss',
         'scss/foundation/components/_type.scss',
@@ -56,7 +57,6 @@ Package.onUse(function (api) {
         'scss/foundation/components/_icon-bar.scss',
         'scss/foundation/components/_iconbar.scss',
         'scss/foundation/components/_grid.scss',
-        'scss/foundation/components/_global.scss',
         'scss/foundation/components/_forms.scss',
         'scss/foundation/components/_flex-video.scss',
         'scss/foundation/components/_dropdown-buttons.scss',
@@ -69,5 +69,5 @@ Package.onUse(function (api) {
         'scss/foundation/components/_alert-boxes.scss',
         'scss/foundation/components/_accordion.scss'
 
-    ], 'server');
+    ], 'client');
 });

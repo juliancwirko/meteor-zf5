@@ -8,132 +8,65 @@ meteor-zf5
 
 ### Important note
 
-1. Quoting guys from [Meteoric](https://atmospherejs.com/meteoric/ionicons-sass) (this is the same scss case here)
-"Due to a current limitation of the Meteor packaging system, the above paths may not exist the first time you run your Meteor app after installing this package. This will cause an error saying the file to import was not found. This may also occur if you run ```meteor reset```. Restarting your app should fix this problem. See [meteor/meteor#2606](https://github.com/meteor/meteor/issues/2606) and [meteor/meteor#2796](https://github.com/meteor/meteor/issues/2796) for more info." **update: It seems that this problem dosen't exist with newest version of Meteor, but I am not sure..**
-
-2. **From version 1.0.0 paths are changed. You need to adjust your styles imports. Example below.**
+**From version 2.0.0 it uses new build plugin. If you want to use it with older Meteor versions use version 1.0.4 of the package**
 
 ## Usage
 
 ````meteor add juliancwirko:zf5````
 
-### Recommended way to use it
-
-You can use special ````scss.json```` file (thanks to [fourseven:scss](https://github.com/fourseven/meteor-scss) package) to configure your main path. Just add ````scss.json```` file in your root folder (and restart your app).
-
-    {
-        "includePaths": [
-            ".meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/"
-        ]
-    }
-
-You can also turn on Autoprefixer here etc. Docs: [fourseven:scss](https://github.com/fourseven/meteor-scss)
-
 Then you will be able to import all (or chosen) Foundation partials in your main .scss file:
 
     @charset "UTF-8";
 
-    @import "normalize.scss";
+    @import "{juliancwirko:zf5}/scss/normalize.scss";
 
-    //local Foundation settings file. Copy it from git repo -> scss/foundation/_settings.scss near main .scss file. Then Uncomment the line below.
+    //local Foundation settings file. You can overwrite the settings here. Copy it from git repo -> scss/foundation/_settings.scss near main .scss file. Then Uncomment the line below.
     // @import "settings"
 
-    @import "foundation/components/grid.scss";
-    @import "foundation/components/accordion.scss";
-    @import "foundation/components/alert-boxes.scss";
-    @import "foundation/components/block-grid.scss";
-    @import "foundation/components/breadcrumbs.scss";
-    @import "foundation/components/button-groups.scss";
-    @import "foundation/components/buttons.scss";
-    @import "foundation/components/clearing.scss";
-    @import "foundation/components/dropdown.scss";
-    @import "foundation/components/dropdown-buttons.scss";
-    @import "foundation/components/flex-video.scss";
-    @import "foundation/components/forms.scss";
-    @import "foundation/components/icon-bar.scss";
-    @import "foundation/components/inline-lists.scss";
-    @import "foundation/components/joyride.scss";
-    @import "foundation/components/keystrokes.scss";
-    @import "foundation/components/labels.scss";
-    @import "foundation/components/magellan.scss";
-    @import "foundation/components/orbit.scss";
-    @import "foundation/components/pagination.scss";
-    @import "foundation/components/panels.scss";
-    @import "foundation/components/pricing-tables.scss";
-    @import "foundation/components/progress-bars.scss";
-    @import "foundation/components/range-slider.scss";
-    @import "foundation/components/reveal.scss";
-    @import "foundation/components/side-nav.scss";
-    @import "foundation/components/split-buttons.scss";
-    @import "foundation/components/sub-nav.scss";
-    @import "foundation/components/switches.scss";
-    @import "foundation/components/tables.scss";
-    @import "foundation/components/tabs.scss";
-    @import "foundation/components/thumbs.scss";
-    @import "foundation/components/tooltips.scss";
-    @import "foundation/components/top-bar.scss";
-    @import "foundation/components/type.scss";
-    @import "foundation/components/offcanvas.scss";
-    @import "foundation/components/visibility.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/grid.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/accordion.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/alert-boxes.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/block-grid.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/breadcrumbs.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/button-groups.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/buttons.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/clearing.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/dropdown.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/dropdown-buttons.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/flex-video.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/forms.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/icon-bar.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/inline-lists.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/joyride.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/keystrokes.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/labels.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/magellan.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/orbit.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/pagination.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/panels.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/pricing-tables.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/progress-bars.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/range-slider.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/reveal.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/side-nav.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/split-buttons.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/sub-nav.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/switches.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/tables.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/tabs.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/thumbs.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/tooltips.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/top-bar.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/type.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/offcanvas.scss";
+    @import "{juliancwirko:zf5}/scss/foundation/components/visibility.scss";
+
+    // instead importing partials you can import all in one import. If you want to do this remove all imports above and uncomment the one below
+    // @import "{juliancwirko:zf5}/scss/foundation.scss";
 
     // your project styles goes here
 
-### Other usage option is without using ````scss.json```` file.
-
-Then you should include these long paths in your main .scss project file.
-
-**In your main scss file (for example if it is in client/stylesheet folder) copy and paste code below:** (you can choose components you want - grid.scss is mandatory)
-
-Full length paths on GitHub (Atmosphere cuts it..): [https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part](https://github.com/juliancwirko/meteor-zf5/blob/master/README.md#scss-part)
-
-    @charset "UTF-8";
-
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/normalize.scss";
-
-    //this is your local Foundation settings file copy it from git repo -> scss/foundation/_settings.scss into your client/stylesheet
-    // @import "settings"
-
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/grid.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/accordion.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/alert-boxes.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/block-grid.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/breadcrumbs.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/button-groups.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/buttons.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/clearing.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/dropdown.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/dropdown-buttons.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/flex-video.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/forms.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/icon-bar.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/inline-lists.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/joyride.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/keystrokes.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/labels.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/magellan.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/orbit.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/pagination.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/panels.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/pricing-tables.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/progress-bars.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/range-slider.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/reveal.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/side-nav.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/split-buttons.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/sub-nav.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/switches.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/tables.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/tabs.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/thumbs.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/tooltips.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/top-bar.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/type.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/offcanvas.scss";
-    @import "../../.meteor/local/build/programs/server/assets/packages/juliancwirko_zf5/scss/foundation/components/visibility.scss";
-
-    // your main styles goes here:
-
-**remember that you can choose components you want**
+**remember that you can choose components you want. Go and read more on the Foundataion docs.**
 
 ### JavaScript part
 
@@ -177,7 +110,7 @@ If you are using Iron Router you can use
 
 More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/devel/Guide.md#hooks)
 
-**The basic logic is to run initialization or init with reflow on element actually presented in the DOM. With Meteor this isn't so simple. It needs some time to use to it.**
+**The basic logic is to run initialization or init it with reflow on element actually presented in the DOM. We don't have here 'document ready' callback. So we need to plug into templates lifetime cycle callbacks. Usage with Meteor isn't so simple. It needs some time to use to it.**
 
 ### Also take a look at
 
@@ -188,6 +121,7 @@ More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/d
 
 ### Change log
 
+- v2.0.0 new build plugin support with new fourseven:scss (v3.4.0-beta1)
 - v1.0.4 fourseven:scss update (v3.2.0)
 - v1.0.3 fourseven:scss update (v3.0.0)
 - v1.0.2 Foundation 5.5.2 adjustments
