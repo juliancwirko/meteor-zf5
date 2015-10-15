@@ -112,12 +112,13 @@ More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/d
 
 **The basic logic is to run initialization or init it with reflow on element actually presented in the DOM. We don't have here 'document ready' callback. So we need to plug into templates lifetime cycle callbacks. Usage with Meteor isn't so simple. It needs some time to use to it.**
 
-### Also take a look at
+### Known problems and how to fix them
 
-- [sGrid - Stylus Flexbox Grid System](http://s-grid.meteor.com)
-- [jeet - Stylus Grid System](https://atmospherejs.com/juliancwirko/s-jeet)
-- [Scotty - Meteor Boilerplate with Stylus, Flow Router, sGrid and many more](https://github.com/juliancwirko/scotty)
-- [and other my repos](https://github.com/juliancwirko)
+1. Anchors used for accordion are broken with last Iron Router version - disable shebang prefixes #! used apprently for compatibility with IE7 and 8. See: [#8](https://github.com/juliancwirko/meteor-zf5/issues/8)
+```
+Iron.Location.configure({useHashPaths:false})
+```
+Thanks to [@sveinburne](https://github.com/sveinburne)
 
 ### Change log
 
@@ -144,3 +145,10 @@ More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/d
 - v0.0.5 - Foundation 5.3.0
 - v0.0.3 - Foundation 5.2.3
 - v0.0.2 - Foundation 5.2.2
+
+### Also take a look at
+
+- [sGrid - Stylus Flexbox Grid System](http://s-grid.meteor.com)
+- [jeet - Stylus Grid System](https://atmospherejs.com/juliancwirko/s-jeet)
+- [Scotty - Meteor Boilerplate with Stylus, Flow Router, sGrid and many more](https://github.com/juliancwirko/scotty)
+- [and other my repos](https://github.com/juliancwirko)
