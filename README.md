@@ -120,6 +120,8 @@ Iron.Location.configure({useHashPaths:false})
 ```
 Thanks to [@sveinburne](https://github.com/sveinburne)
 
+2. If you have update problems try to remove `juliancwirko:zf5` and `fourseven:scss` and then add `juliancwirko:zf5` See: [#9](https://github.com/juliancwirko/meteor-zf5/issues/9)
+
 ### Change log
 
 - v2.0.1 Foundation 5.5.3 adjustments
