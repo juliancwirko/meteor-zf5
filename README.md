@@ -114,13 +114,13 @@ More: [Iron Router Hooks Docs](https://github.com/iron-meteor/iron-router/blob/d
 
 ### Known problems and how to fix them
 
-1. Anchors used for accordion are broken with last Iron Router version - disable shebang prefixes #! used apprently for compatibility with IE7 and 8. See: [#8](https://github.com/juliancwirko/meteor-zf5/issues/8)
+- **Anchors used for accordion are broken with last Iron Router version - disable shebang prefixes #! used apprently for compatibility with IE7 and 8.** See: [#8](https://github.com/juliancwirko/meteor-zf5/issues/8)
 ```
 Iron.Location.configure({useHashPaths:false})
 ```
 Thanks to [@sveinburne](https://github.com/sveinburne)
 
-2. If you have update problems try to remove `juliancwirko:zf5` and `fourseven:scss` and then add `juliancwirko:zf5` See: [#9](https://github.com/juliancwirko/meteor-zf5/issues/9)
+- **If you have update problems try to remove `juliancwirko:zf5` and `fourseven:scss` and then add `juliancwirko:zf5`** See: [#9](https://github.com/juliancwirko/meteor-zf5/issues/9)
 
 ### Change log
 
