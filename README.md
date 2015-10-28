@@ -20,7 +20,12 @@ Then you will be able to import all (or chosen) Foundation partials in your main
 
     @import "{juliancwirko:zf5}/scss/normalize.scss";
 
-    //local Foundation settings file. You can overwrite the settings here. Copy it from git repo -> scss/foundation/_settings.scss near main .scss file. Replace the functions path with '{juliancwirko:zf5}/scss/foundation/functions' Then Uncomment the line below:
+    // local Foundation settings file. 
+    // You can overwrite the settings here. 
+    // Copy it from git repo -> scss/foundation/_settings.scss near main .scss file. 
+    // Inside the file replace the functions 'foundation/functions' import path 
+    // with '{juliancwirko:zf5}/scss/foundation/functions' 
+    // Then Uncomment the line below:
     // @import "settings"
 
     @import "{juliancwirko:zf5}/scss/foundation/components/grid.scss";
