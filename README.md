@@ -4,7 +4,9 @@ meteor-zf5
 #### Foundation for Sites 5.5.3 with Scss for Meteor
 
 ### Demo
-[http://zf5.meteor.com](http://zf5.meteor.com)
+
+- [zf5.meteor.com](http://zf5.meteor.com)
+- [zf5.meteor.com - source code](https://github.com/juliancwirko/meteor-zf5-demo)
 
 ### Important note
 
