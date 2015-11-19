@@ -3,14 +3,14 @@ meteor-zf5
 
 #### Foundation for Sites 5.5.3 with Scss for Meteor
 
+If you are searching for Foundation for Sites 6 go and check the official package:
+
+- [zurb:foundation-sites](https://atmospherejs.com/zurb/foundation-sites)
+
 ### Demo
 
 - [zf5.meteor.com](http://zf5.meteor.com)
 - [zf5.meteor.com - source code](https://github.com/juliancwirko/meteor-zf5-demo)
-
-### Important note
-
-**From version 2.0.0 it uses new build plugin. If you want to use it with older Meteor versions use version 1.0.4 of the package**
 
 ## Usage
 
@@ -22,11 +22,11 @@ Then you will be able to import all (or chosen) Foundation partials in your main
 
     @import "{juliancwirko:zf5}/scss/normalize.scss";
 
-    // local Foundation settings file. 
-    // You can overwrite the settings here. 
-    // Copy it from git repo -> scss/foundation/_settings.scss near main .scss file. 
-    // Inside the file replace the functions 'foundation/functions' import path 
-    // with '{juliancwirko:zf5}/scss/foundation/functions' 
+    // local Foundation settings file.
+    // You can overwrite the settings here.
+    // Copy it from git repo -> scss/foundation/_settings.scss near main .scss file.
+    // Inside the file replace the functions 'foundation/functions' import path
+    // with '{juliancwirko:zf5}/scss/foundation/functions'
     // Then Uncomment the line below:
     // @import "settings"
 
