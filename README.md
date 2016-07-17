@@ -28,7 +28,7 @@ Then you will be able to import all (or chosen) Foundation partials in your main
     // Inside the file replace the functions 'foundation/functions' import path
     // with '{juliancwirko:zf5}/scss/foundation/functions'
     // Then Uncomment the line below:
-    // @import "settings"
+    // @import "settings";
 
     @import "{juliancwirko:zf5}/scss/foundation/components/grid.scss";
     @import "{juliancwirko:zf5}/scss/foundation/components/accordion.scss";
