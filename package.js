@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Foundation for Sites 5 with Scss",
-  version: "2.0.2",
+  version: "3.0.0",
   name: "juliancwirko:zf5",
   git: "https://github.com/juliancwirko/meteor-zf5.git",
 });
