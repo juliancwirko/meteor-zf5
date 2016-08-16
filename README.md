@@ -130,7 +130,7 @@ Thanks to [@sveinburne](https://github.com/sveinburne)
 - **If you have update problems try to remove `juliancwirko:zf5` and `fourseven:scss` and then add `juliancwirko:zf5`** See: [#9](https://github.com/juliancwirko/meteor-zf5/issues/9)
 
 ### Change log
-
+- v3.0.0 fourseven:scss update (v3.8.1)
 - v2.0.2 fourseven:scss update (v3.4.1)
 - v2.0.1 Foundation 5.5.3 adjustments
 - v2.0.0 new build plugin support with new fourseven:scss (v3.4.0-beta1)
